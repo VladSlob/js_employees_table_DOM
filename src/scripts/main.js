@@ -247,6 +247,9 @@ document.addEventListener('DOMContentLoaded', () => {
       // add an input with original cell value
       const input = document.createElement('input');
 
+      input.classList.add('cell-input');
+      input.value = originalValue;
+      cell.appendChild('input');
       // focus on input
       input.focus();
 
